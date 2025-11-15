@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dr. K. E. Ch. Vidyasagar | Biomedical Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic and professional profile of Dr. K. E. Ch. Vidyasagar, Biomedical Engineer and Assistant Professor.">
+  <style>
+    :root {
+      --bg: #050816;
+      --bg-alt: #0b1020;
+      --card-bg: #111827;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56,189,248,0.12);
+      --accent-strong: #0ea5e9;
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --border-soft: #1f2937;
+      --shadow-soft: 0 18px 45px rgba(15,23,42,0.8);
+      --radius-lg: 16px;
+      --radius-xl: 20px;
+      --max-width: 1120px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1d2440 0, #050816 55%);
+      color: var(--text-main);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Layout */
+    .wrapper {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 14px;
+    }
+
+    /* Nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(16px);
+      background: linear-gradient(to bottom, rgba(3,7,18,0.95), rgba(3,7,18,0.75));
+      border-bottom: 1px solid rgba(148,163,184,0.25);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid rgba(148,163,184,0.5);
+      box-shadow: 0 0 0 3px rgba(15,23,42,0.7);
+    }
+
+    .nav-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .nav-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #f9fafb;
+    }
+
+    .nav-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: flex-end;
+      font-size: 0.78rem;
+    }
+
+    .nav-links a {
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: transparent;
+      border: 1px solid transparent;
+      color: #e5e7eb;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      background: rgba(15,23,42,0.95);
+      border-color: rgba(148,163,184,0.7);
+      transform: translateY(-1px);
+      box-shadow: 0 0 0 1px rgba(15,23,42,0.9), 0 10px 25px rgba(15,23,42,0.9);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 26px 0 34px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 26px;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 9px 4px 4px;
+      border-radius: 999px;
+      background: rgba(15,23,42,0.85);
+      border: 1px solid rgba(148,163,184,0.4);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .hero-tag-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 4px rgba(34,197,94,0.25);
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 3.2vw, 2.6rem);
+      line-height: 1.15;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .hero h1 span {
+      color: var(--accent-strong);
+    }
+
+    .hero-role {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .hero-highlight {
+      font-size: 0.95rem;
+      color: #d1d5db;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .chip {
+      font-size: 0.75rem;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: radial-gradient(circle at top left, rgba(56,189,248,0.35), rgba(15,23,42,1));
+      border: 1px solid rgba(56,189,248,0.4);
+      box-shadow: 0 10px 30px rgba(15,23,42,0.9);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .hero-contact {
+      margin-top: 18px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .hero-contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .hero-contact a:hover {
+      text-decoration: underline;
+    }
+
+    .hero-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .hero-card {
+      position: relative;
+      width: min(280px, 70vw);
+      border-radius: 26px;
+      background: radial-gradient(circle at top, #1d283a 0, #020617 60%);
+      padding: 12px 12px 18px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(148,163,184,0.4);
+      overflow: hidden;
+    }
+
+    .hero-inner {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      background: #020617;
+      border: 1px solid rgba(15,23,42,0.8);
+    }
+
+    .hero-inner img {
+      width: 100%;
+      height: 290px;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.02);
+      transition: transform 0.7s ease;
+    }
+
+    .hero-card:hover .hero-inner img {
+      transform: scale(1.06);
+    }
+
+    .hero-glow {
+      position: absolute;
+      inset: -40%;
+      background: radial-gradient(circle at 20% 0%, rgba(56,189,248,0.22), transparent 55%),
+                  radial-gradient(circle at 80% 120%, rgba(59,130,246,0.32), transparent 60%);
+      opacity: 0.8;
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+
+    .hero-label {
+      position: absolute;
+      bottom: 8px;
+      left: 8px;
+      right: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 9px;
+      border-radius: 999px;
+      background: rgba(15,23,42,0.85);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(148,163,184,0.5);
+      font-size: 0.72rem;
+      color: #e5e7eb;
+    }
+
+    .hero-label span:nth-child(2) {
+      color: var(--accent-strong);
+      font-weight: 600;
+    }
+
+    .hero-orbit {
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 1px dashed rgba(148,163,184,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      backdrop-filter: blur(6px);
+      background: radial-gradient(circle at 30% 0%, rgba(56,189,248,0.25), rgba(15,23,42,0.9));
+      animation: rotate 16s linear infinite;
+    }
+
+    .hero-orbit span {
+      transform: rotate(-18deg);
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg);}
+      to { transform: rotate(360deg);}
+    }
+
+    /* Sections */
+    main {
+      padding-bottom: 60px;
+    }
+
+    section {
+      padding: 8px 0 0;
+    }
+
+    .section-inner {
+      margin-top: 12px;
+      background: radial-gradient(circle at top left, rgba(15,23,42,0.9), #020617);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-xl);
+      padding: 18px 16px 18px;
+      box-shadow: 0 14px 35px rgba(15,23,42,0.78);
+    }
+
+    .section-title {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #9ca3af;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::before {
+      content: "";
+      width: 36px;
+      height: 1px;
+      background: linear-gradient(to right, var(--accent), transparent);
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      margin-top: 4px;
+      color: #e5e7eb;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    .card {
+      background: radial-gradient(circle at top left, #111827, #020617 70%);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(55,65,81,0.9);
+      padding: 14px 14px 12px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: -30%;
+      background: radial-gradient(circle at top left, rgba(56,189,248,0.18), transparent 55%);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+      pointer-events: none;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(15,23,42,1);
+      border-color: rgba(148,163,184,0.9);
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .card-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .card-list {
+      font-size: 0.87rem;
+      color: #d1d5db;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .pill {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(15,23,42,0.9);
+      border: 1px solid rgba(75,85,99,0.9);
+      color: #e5e7eb;
+    }
+
+    ul {
+      margin-left: 18px;
+      margin-top: 4px;
+    }
+    li {
+      margin-bottom: 3px;
+    }
+
+    .timeline-item {
+      margin-bottom: 8px;
+      font-size: 0.88rem;
+    }
+
+    .timeline-role {
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .timeline-org {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    .timeline-date {
+      font-size: 0.78rem;
+      color: var(--accent);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.75rem;
+      padding: 3px 7px;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.6);
+      color: var(--accent-strong);
+      background: rgba(15,23,42,0.9);
+      margin-bottom: 6px;
+    }
+
+    .pub-item {
+      margin-bottom: 7px;
+      font-size: 0.86rem;
+    }
+
+    .pub-title {
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .pub-meta {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    .tagline-small {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+      gap: 18px;
+      margin-top: 12px;
+      align-items: center;
+    }
+
+    .contact-card {
+      font-size: 0.88rem;
+    }
+
+    .contact-card p {
+      margin-bottom: 4px;
+    }
+
+    .contact-highlight {
+      font-size: 0.9rem;
+      color: #d1d5db;
+      margin-top: 6px;
+    }
+
+    .social-row a {
+      display: inline-flex;
+      font-size: 0.8rem;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.7);
+      margin-right: 6px;
+      margin-top: 5px;
+      text-decoration: none;
+    }
+
+    .social-row a:hover {
+      background: rgba(15,23,42,0.95);
+    }
+
+    footer {
+      border-top: 1px solid rgba(31,41,55,0.95);
+      padding: 14px 0 22px;
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      text-align: center;
+      background: #020617;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Back to top */
+    .back-to-top {
+      position: fixed;
+      right: 14px;
+      bottom: 14px;
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background: rgba(15,23,42,0.95);
+      border: 1px solid rgba(148,163,184,0.7);
+      color: #e5e7eb;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 12px 30px rgba(15,23,42,0.95);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease, transform 0.25s ease;
+      z-index: 60;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 880px) {
+      .hero-grid,
+      .grid-2,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-right {
+        justify-content: flex-start;
+      }
+      .hero-card {
+        margin-top: 4px;
+      }
+      .nav-links {
+        max-width: 70%;
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+      .nav-links {
+        max-width: 100%;
+      }
+      .section-inner {
+        padding: 14px 12px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrapper nav">
+    <div class="nav-left">
+      <div class="nav-logo">
+        <img src="profile.jpg" alt="Dr. K. E. Ch. Vidyasagar">
+      </div>
+      <div>
+        <div class="nav-title">Dr. K. E. Ch. Vidyasagar</div>
+        <div class="nav-sub">Biomedical Engineer · Assistant Professor</div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#interests">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#patents">Patents</a>
+      <a href="#conferences">Conferences</a>
+      <a href="#affiliations">Affiliations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrapper">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-grid reveal">
+        <div>
+          <div class="hero-tag">
+            <span class="hero-tag-dot"></span>
+            <span>Active in teaching · research · innovation</span>
+          </div>
+          <h1>Dr. <span>K. E. Ch.</span> Vidyasagar</h1>
+          <div class="hero-role">
+            Assistant Professor &amp; Biomedical Engineer · Osmania University · NIPER Hyderabad · UNF (USA)
+          </div>
+          <p class="hero-highlight">
+            Biomedical engineer with a Ph.D. from IIT Delhi, focusing on laser surface modification,
+            tribo-corrosion of medical implants, smart medical devices, and assistive technologies.
+          </p>
+          <div class="chip-row">
+            <div class="chip">Laser Surface Texturing</div>
+            <div class="chip">Tribo-corrosion</div>
+            <div class="chip">Medical Devices</div>
+            <div class="chip">Assistive Tech</div>
+          </div>
+          <div class="hero-contact">
+            <div><strong>Email:</strong> <a href="mailto:vidyasagar.ou@osmania.ac.in">vidyasagar.ou@osmania.ac.in</a></div>
+            <div><strong>Mobile:</strong> <a href="tel:+919908143701">+91 99081 43701</a></div>
+            <div class="tagline-small">
+              Best Teacher State Award (Telangana, 2024) · Vice-Chancellor Research Excellence Award (2022)
+            </div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-card">
+            <div class="hero-glow"></div>
+            <div class="hero-inner">
+              <img src="profile.jpg" alt="Dr. Vidyasagar portrait">
+              <div class="hero-label">
+                <span>Ph.D. · IIT Delhi</span>
+                <span>Biomedical Engineering</span>
+              </div>
+            </div>
+            <div class="hero-orbit">
+              <span>Laser · Tribology · Implants</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Summary -->
+    <section id="about">
+      <div class="section-inner reveal">
+        <div class="section-title">Profile</div>
+        <div class="section-subtitle">About</div>
+        <p style="margin-top:8px;font-size:0.92rem;color:#e5e7eb;">
+          Biomedical engineer with experience across academia, international research labs, and collaborative projects.
+          Organized, dependable, and known for balancing multiple priorities while driving projects in laser surface
+          engineering, tribo-corrosion, smart prosthetics, and assistive technologies. Strong critical thinking and
+          self-motivation with a consistent focus on impactful, translational research.
+        </p>
+        <div class="badge" style="margin-top:10px;">
+          <span>Best Teacher State Award &mdash; Government of Telangana, 2024</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Awards -->
+    <section id="experience">
+      <div class="section-inner reveal">
+        <div class="section-title">Career</div>
+        <div class="section-subtitle">Academic &amp; Research Positions</div>
+
+        <div class="grid-2" style="margin-top:10px;">
+          <div class="card">
+            <div class="card-title">Work History</div>
+            <div class="card-list">
+              <div class="timeline-item">
+                <div class="timeline-role">Research Associate (Remote)</div>
+                <div class="timeline-org">Biomedical Sensors and Systems Lab, University of North Florida (UNF), USA</div>
+                <div class="timeline-date">Sep 2023 &ndash; Present</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-role">Guest Faculty</div>
+                <div class="timeline-org">Department of Medical Devices, NIPER, Hyderabad</div>
+                <div class="timeline-date">Aug 2022 &ndash; Present</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-role">Assistant Professor</div>
+                <div class="timeline-org">Department of Biomedical Engineering, Osmania University, Hyderabad</div>
+                <div class="timeline-date">Feb 2014 &ndash; 2017</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-role">Research Associate</div>
+                <div class="timeline-org">Department of Electrical Engineering, University of Malaya, Malaysia</div>
+                <div class="timeline-date">Feb 2013 &ndash; Jan 2014</div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-role">Assistant Professor</div>
+                <div class="timeline-org">Department of Biomedical Engineering, Dr. Bhausaheb Nandkar College of Engineering &amp; Technology, Maharashtra</div>
+                <div class="timeline-date">May 2011 &ndash; Jan 2013</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Awards &amp; Recognitions</div>
+            <ul class="card-list">
+              <li>Best Teacher State Award, Government of Telangana (Teachers’ Day 2024).</li>
+              <li>Inaugural Vice-Chancellor Award for Research Excellence, 2022.</li>
+              <li>Selected for Ph.D. at Centre for Biomedical Engineering, IIT Delhi under QIP.</li>
+              <li>Invited to Technical University of Munich (TUM) for Indo-German collaborative project discussions.</li>
+              <li>Travel grant of ₹1.5 lakhs under research promotion scheme.</li>
+              <li>Youngest faculty in College of Engineering, Osmania University to be granted multiple patents.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="section-inner reveal">
+        <div class="section-title">Academics</div>
+        <div class="section-subtitle">Education</div>
+
+        <div class="grid-2" style="margin-top:10px;">
+          <div class="card">
+            <div class="card-title">Formal Education</div>
+            <div class="card-list">
+              <div class="timeline-item">
+                <div class="timeline-role">Ph.D. &mdash; Biomedical Engineering</div>
+                <div class="timeline-org">Centre for Biomedical Engineering, IIT Delhi</div>
+                <div class="timeline-date">Jul 2017 &ndash; Jan 2023</div>
+                <div class="tagline-small">
+                  Dissertation: Laser Surface Texturing of Freeform Surfaces of Articulating Components for Enhanced Tribo-Corrosion Properties
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-role">M.Tech &mdash; Biomedical Engineering</div>
+                <div class="timeline-org">Vellore Institute of Technology (VIT), Vellore</div>
+                <div class="timeline-date">Jun 2009 &ndash; May 2011</div>
+                <div class="tagline-small">
+                  Dissertation: Design and Development of Wireless Intravenous Multidrug Delivery System
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-role">B.Tech &mdash; Biomedical Engineering</div>
+                <div class="timeline-org">Jawaharlal Nehru Technological University</div>
+                <div class="timeline-date">Jul 2005 &ndash; May 2009</div>
+                <div class="tagline-small">
+                  Dissertation: Design and Development of Head Controlled Wheelchair
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Research Themes</div>
+            <ul class="card-list">
+              <li>Laser surface modification and nano/micro texturing of biomedical and freeform components.</li>
+              <li>Tribo-corrosion studies of implants (CoCrMo, Nitinol, bearings, gearsets).</li>
+              <li>Assistive technologies &amp; robotics for healthcare and rehabilitation.</li>
+              <li>Additive manufacturing and advanced materials for medical devices.</li>
+              <li>Brain–machine interfaces and physiological signal processing.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests & Skills -->
+    <section id="interests">
+      <div class="section-inner reveal">
+        <div class="section-title">Focus</div>
+        <div class="section-subtitle">Research Interests</div>
+
+        <div class="grid-2" style="margin-top:10px;">
+          <div class="card">
+            <div class="card-title">Core Interests</div>
+            <div class="pill-row">
+              <span class="pill">Laser Surface Modification</span>
+              <span class="pill">Tribo-Corrosion of Implants</span>
+              <span class="pill">Nano/Micro Texturing</span>
+              <span class="pill">Robotics</span>
+              <span class="pill">Medical Devices</span>
+              <span class="pill">Assistive Technologies</span>
+              <span class="pill">Brain–Machine Interfaces</span>
+              <span class="pill">Additive Manufacturing</span>
+            </div>
+          </div>
+
+          <div class="card" id="skills">
+            <div class="card-title">Software &amp; Programming</div>
+            <ul class="card-list">
+              <li><strong>Programming:</strong> Embedded C, MATLAB, Python, Arduino / Raspberry Pi.</li>
+              <li><strong>Software:</strong> SOLIDWORKS, MIMICS, LabVIEW.</li>
+              <li><strong>Data &amp; DAQ:</strong> Data acquisition systems, analysis of physiological signals.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top:10px;">
+          <div class="card">
+            <div class="card-title">Key Equipment Experience</div>
+            <ul class="card-list">
+              <li>Laser machines (nanosecond, continuous), tribometers, tribo-corrosion testers.</li>
+              <li>Potentiostat polarization equipment, profilometer, universal testing machine (UTM).</li>
+              <li>Injection molding, extruder, sintering furnace, 3D printer.</li>
+              <li>SEM/EDX/FESEM/TEM, XRD, bearing test rigs.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Domains</div>
+            <ul class="card-list">
+              <li>Medical implants and joint tribology.</li>
+              <li>Smart prosthetics and wearable sensors.</li>
+              <li>Home healthcare monitoring and automation.</li>
+              <li>Signal-to-image conversion and deep learning for physiological signals.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Funded Projects -->
+    <section id="projects">
+      <div class="section-inner reveal">
+        <div class="section-title">Grants</div>
+        <div class="section-subtitle">Funded Projects</div>
+        <div class="grid-2" style="margin-top:10px;">
+          <div class="card">
+            <div class="card-title">UGC-Funded</div>
+            <ul class="card-list">
+              <li><strong>Design and Development of Automatic Epilepsy Detection System</strong><br>
+                  Funding: UGC – ₹3,80,000.</li>
+              <li><strong>Design and Development of Multi-Physiological Signal Based Home Automation System</strong><br>
+                  Funding: UGC – ₹2,60,000.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-title">DST-PURSE</div>
+            <ul class="card-list">
+              <li><strong>Design and Development of Smart Prosthetics</strong><br>
+                  Funding: DST-PURSE – ₹4,00,000.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+      <div class="section-inner reveal">
+        <div class="section-title">Research Output</div>
+        <div class="section-subtitle">Selected Journal Publications</div>
+
+        <div class="card" style="margin-top:10px;">
+          <div class="pub-item">
+            <div class="pub-title">Cancer Detection Using Artificial Intelligence: A Paradigm in Early Diagnosis</div>
+            <div class="pub-meta">Archives of Computational Methods in Engineering, 2025. (IF 9.7)</div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-title">Signal to Image Conversion and Convolutional Neural Networks for Physiological Signal Processing: A Review</div>
+            <div class="pub-meta">IEEE Access, 2024; 12:66726–66764. (IF 3.9)</div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-title">Enhanced Corrosion Resistance of CoCrMo by Laser-Based Surface Modification</div>
+            <div class="pub-meta">Surface Engineering, 2024. (IF 2.8)</div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-title">Laser-Based Micro Texturing of Freeform Surfaces of Implants Using a Stewart Platform</div>
+            <div class="pub-meta">Precision Engineering, 2021; 72:294–303. (IF 3.315)</div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-title">An Exploration of Frictional and Vibrational Behaviors of Textured Deep Groove Ball Bearing in the Vicinity of Requisite Minimum Load</div>
+            <div class="pub-meta">Friction, 2021. (IF 6.168)</div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-title">Improvement of Deep Groove Ball Bearing’s Performance Using a Bionic Textured Inner Race</div>
+            <div class="pub-meta">Journal of Bionic Engineering, 2021; 18:974–990. (IF 2.995)</div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-title">Optimization of Laser Parameters for Improved Corrosion Resistance of Nitinol</div>
+            <div class="pub-meta">Materials and Manufacturing Processes, 2020; 35:1661–1669. (IF 4.783)</div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-title">Tribological and Vibration Studies of Textured Spur Gear Pairs Under Fully Flooded and Starved Lubricating Conditions</div>
+            <div class="pub-meta">Tribology Transactions, 2020; 63:1103–1120. (IF 2.056)</div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-title">Exploratory Tribodynamic Research on Textured Gearsets Lubricated with Molybdenum Disulfide Blended Grease</div>
+            <div class="pub-meta">Tribology International, 2022; 165:1–18. (IF 5.62)</div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-title">Classification of Mild and Severe Adolescent Idiopathic Scoliosis from Healthy Subjects via a Supervised Learning Model</div>
+            <div class="pub-meta">Biocybernetics and Biomedical Engineering, 2022; 42:870–887. (IF 5.687)</div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-title">Protein Patterning on Microtextured Polymeric Nanobrush Templates Obtained by Nanosecond Fiber Laser</div>
+            <div class="pub-meta">Macromolecular Bioscience, 2022; 22:1–15. (IF 5.859)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Patents -->
+    <section id="patents">
+      <div class="section-inner reveal">
+        <div class="section-title">Innovation</div>
+        <div class="section-subtitle">Patents</div>
+
+        <div class="card" style="margin-top:10px;">
+          <ul class="card-list">
+            <li><strong>Mobile Controlled Drug Delivery System</strong><br>
+                Application No. 3150/CHE/2010; Grant No. 288750. (Granted)</li>
+            <li><strong>Mobile Controlled Multi Drug Infusion System</strong><br>
+                Application No. 3996/CHE/2010 A; Grant No. 304847. (Granted)</li>
+            <li><strong>HearIT &mdash; Modular Multi-Speaker Multi-Microphone SOAE/TEOAE/DPOAE Test Probe</strong><br>
+                Patent applied.</li>
+            <li><strong>Gaze Tracking Control System for Wheelchair and Smart Home Automation</strong><br>
+                Application No. 202441052599 A, Official Journal Issue 29/2024.</li>
+            <li><strong>An Electronic Travel Aid for the Visually Impaired Using Auditory Feedback</strong><br>
+                Application No. 202441055554 A, Official Journal Issue 31/2024.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conferences -->
+    <section id="conferences">
+      <div class="section-inner reveal">
+        <div class="section-title">Engagement</div>
+        <div class="section-subtitle">Selected International Conferences</div>
+
+        <div class="card" style="margin-top:10px;">
+          <ul class="card-list">
+            <li>Gamified Rehabilitation and Physiotherapy Using MediaPipe for Posture and Hand Gesture Recognition, ICMACC-2025.</li>
+            <li>Portable Multiparameter Biomedical Sensor Fusion for Home Healthcare, ICMACC-2025.</li>
+            <li>Simulation and Control Solutions for Accessible Surgical Robotics in Developing Nations, 20th IEEE BSN, Boston, USA, 2024.</li>
+            <li>Gaze Tracking Control System for Wheelchair and Smart Home Automation, 19th IEEE BSN, Boston, USA, 2023.</li>
+            <li>Performance studies of fully flooded and starved lubricated textured spur gearsets, 46th Leeds-Lyon Symposium on Tribology, Lyon, France, 2019.</li>
+            <li>Performance Studies of Spur Gearsets with Textured Face and Flank, IndiaTrib-2019, IISc Bangalore.</li>
+            <li>Performance Evaluation of Contemporary Classifiers for Automatic Detection of Epileptic EEG, ICIC, COEP Pune, 2015.</li>
+            <li>Multiple earlier works on heart valve design, crash impact on eye, infusion pumps, pattern recognition, and head-controlled wheelchair at international venues (2008–2013).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Affiliations -->
+    <section id="affiliations">
+      <div class="section-inner reveal">
+        <div class="section-title">Network</div>
+        <div class="section-subtitle">Professional Affiliations &amp; Service</div>
+
+        <div class="grid-2" style="margin-top:10px;">
+          <div class="card">
+            <div class="card-title">Memberships</div>
+            <ul class="card-list">
+              <li>Expert committee member, Department of Intermediate Education, Telangana.</li>
+              <li>Life Member, Biomedical Society of India (BMESI) – LM-1021.</li>
+              <li>Life Member, Indian Society for Technical Education (ISTE) – LM-82982.</li>
+              <li>Associate Member, Institution of Engineers India (IEI) – A-556145-1.</li>
+              <li>Member, Biomedical Engineering Society (BMES) – 39231.</li>
+              <li>Life Member, International Association of Engineers (IAENG) – 121530.</li>
+              <li>Life Member, Asia-Pacific Chemical, Biological &amp; Environmental Engineering Society (APCBEES) – 200666.</li>
+              <li>Life Member, International Association of Computer Science and Information Technology (IACSIT) – 80344561.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Editorial &amp; Reviewer Roles</div>
+            <ul class="card-list">
+              <li>Editorial Member, International Journal of Engineering Practical Research (IJEPR).</li>
+              <li>Reviewer, International Journal of Emerging Technology and Advanced Engineering.</li>
+              <li>Reviewer, World Scientific and Engineering Academy and Society (WSEAS) publications.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-inner reveal">
+        <div class="section-title">Connect</div>
+        <div class="section-subtitle">Contact</div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <p><strong>Name:</strong> Dr. K. E. Ch. Vidyasagar</p>
+            <p><strong>Current Roles:</strong> Assistant Professor, Osmania University · Guest Faculty, NIPER Hyderabad · Research Associate, UNF (USA)</p>
+            <p><strong>Address:</strong> Dept. of Biomedical Engineering, Osmania University, Hyderabad, India &mdash; 500007</p>
+            <p><strong>Mobile:</strong> <a href="tel:+919908143701">+91 99081 43701</a></p>
+            <p><strong>Email:</strong> <a href="mailto:vidyasagar.ou@osmania.ac.in">vidyasagar.ou@osmania.ac.in</a></p>
+            <p class="contact-highlight">
+              Open to collaborations in laser-based surface engineering, tribo-corrosion, assistive technologies, and smart medical devices.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-title">Quick Links</div>
+            <p class="tagline-small">
+              Add your external profiles here by updating the links.
+            </p>
+            <div class="social-row">
+              <!-- Replace # with your actual profile URLs if available -->
+              <a href="#" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">ORCID</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<footer>
+  © <span id="year"></span> Dr. K. E. Ch. Vidyasagar · Biomedical Engineering
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  reveals.forEach(el => observer.observe(el));
+
+  // Back to top
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 260) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+  });
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
